@@ -1,24 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fN2-TF-krb">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eN-97-rtH">
+                                <rect key="frame" x="84.666666666666686" y="363" width="224" height="114"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4c-Pu-csV">
+                                <rect key="frame" x="84.666666666666686" y="119" width="224" height="114"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFh-Ei-TuM">
+                                <rect key="frame" x="84.666666666666686" y="241" width="224" height="114"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3eN-97-rtH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="260" id="Ajz-FJ-L2S"/>
+                            <constraint firstItem="WFh-Ei-TuM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CDv-xV-rpK"/>
+                            <constraint firstItem="WFh-Ei-TuM" firstAttribute="centerX" secondItem="x4c-Pu-csV" secondAttribute="centerX" id="D63-2t-per"/>
+                            <constraint firstItem="x4c-Pu-csV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="HAX-rh-Tcs"/>
+                            <constraint firstItem="3eN-97-rtH" firstAttribute="top" secondItem="WFh-Ei-TuM" secondAttribute="bottom" constant="8" symbolic="YES" id="Pf0-xL-EAm"/>
+                            <constraint firstItem="3eN-97-rtH" firstAttribute="centerX" secondItem="WFh-Ei-TuM" secondAttribute="centerX" id="Qxb-69-rBG"/>
+                            <constraint firstItem="3eN-97-rtH" firstAttribute="top" secondItem="WFh-Ei-TuM" secondAttribute="bottom" constant="18" id="R3f-4v-0RL"/>
+                            <constraint firstItem="3eN-97-rtH" firstAttribute="centerX" secondItem="WFh-Ei-TuM" secondAttribute="centerX" id="Ynd-06-4uU"/>
+                            <constraint firstItem="3eN-97-rtH" firstAttribute="centerX" secondItem="WFh-Ei-TuM" secondAttribute="centerX" id="Z22-L0-E4N"/>
+                            <constraint firstItem="3eN-97-rtH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cVR-Zk-Wj1"/>
+                            <constraint firstItem="WFh-Ei-TuM" firstAttribute="top" secondItem="x4c-Pu-csV" secondAttribute="bottom" constant="26" id="gn5-Ut-GdK"/>
+                            <constraint firstItem="3eN-97-rtH" firstAttribute="top" secondItem="WFh-Ei-TuM" secondAttribute="bottom" constant="18" id="ijM-a7-hUw"/>
+                            <constraint firstItem="3eN-97-rtH" firstAttribute="firstBaseline" secondItem="WFh-Ei-TuM" secondAttribute="baseline" constant="22" symbolType="layoutAnchor" id="oFq-P1-qne"/>
+                            <constraint firstItem="WFh-Ei-TuM" firstAttribute="top" secondItem="x4c-Pu-csV" secondAttribute="bottom" constant="8" symbolic="YES" id="wwj-cU-WGx"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="usl-SX-K7x"/>
+                    <connections>
+                        <outlet property="button1" destination="x4c-Pu-csV" id="f1r-fi-Nf5"/>
+                        <outlet property="button2" destination="WFh-Ei-TuM" id="rAn-L5-sLd"/>
+                        <outlet property="button3" destination="3eN-97-rtH" id="mu7-r8-YE6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1002.2900763358779" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DMV-aK-0M4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fN2-TF-krb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rAb-pd-vHR">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fuS-8v-eW4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qQO-Bk-1B4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75.572519083969468" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="us" width="200" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
