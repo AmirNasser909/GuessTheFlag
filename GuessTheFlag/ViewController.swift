@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         countries += ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "russia", "spain", "uk", "us"]
-
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Score Share", style: .plain, target: self, action: #selector(shareTapped))
         button1.layer.borderWidth = 1
         button2.layer.borderWidth = 1
         button3.layer.borderWidth = 1
@@ -65,6 +65,10 @@ class ViewController: UIViewController {
             score = 0
         }
     }
-    
+    @objc func shareTapped(){
+        let score = "Score is \(score)"
+        let activityViewController = UIActivityViewController(activityItems: [score], applicationActivities: [])
+        present(activityViewController, animated: true, completion: nil)
+    }
 }
 
